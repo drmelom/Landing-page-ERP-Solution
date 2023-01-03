@@ -1,0 +1,139 @@
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #bbb;
+}
+.header-contact .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+}
+
+.logo a img {
+  max-width: 8rem;
+}
+
+.home-sec {
+  padding-top: 6rem;
+  padding-left: 2rem;
+}
+
+.sec-home {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
+
+.btn-star {
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: #1b004b;
+  padding: 0.25rem 2rem;
+  font-weight: 300;
+}
+.btn-star-s {
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: rgba(128, 0, 178, 0.7176470588);
+  padding: 0.25rem 1.5rem;
+  font-weight: 600;
+}
+.btn-star-s:hover {
+  background-color: rgba(128, 0, 178, 0.9215686275);
+}
+.btn-star:hover {
+  background-color: #5725ac;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 0.75rem;
+  list-style: none;
+  display: inline;
+  margin-right: 2rem;
+}
+.main-menu li a {
+  color: #707070;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+.main-menu li a:hover {
+  color: #1b004b;
+}
+
+.header-banner {
+  text-align: center;
+  width: 100%;
+  background: radial-gradient(circle, rgb(27, 0, 75) 0%, rgb(76, 0, 125) 42%, rgb(127, 0, 178) 63%);
+}
+.header-banner a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+.flip > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+.flip div div {
+  background: #42c58a;
+}
+
+.flip div:first-child div {
+  background: #4ec7f3;
+}
+
+.flip div:last-child div {
+  background: #DC143C;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

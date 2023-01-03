@@ -1,0 +1,97 @@
+$btn-sm-background : #8000b2b7;
+$btn-background:#1b004b;
+@mixin btn {
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+}
+.btn-star{
+    @include btn();
+    background-color: $btn-background;
+    padding: 0.25rem 2rem;
+    font-weight: 300;
+    &-s{
+        @include btn();
+        background-color:$btn-sm-background;
+        padding: 0.25rem 1.5rem;
+        font-weight: 600;
+        &:hover{
+            background-color: #8000b2eb;
+        }
+
+    }
+    &:hover{
+        background-color: #5725ac;
+    }
+
+}
+.main-menu{
+    margin-bottom: 0;
+    li {
+        font-size: 0.75rem;
+        list-style: none;
+        display: inline;
+        margin-right: 2rem;
+        a {
+            color: #707070;
+            text-decoration: none;
+            transition: all .1s ease;
+
+            &:hover {
+                color: $btn-background
+            }
+        }
+    }
+}
+.header-banner{
+    text-align: center;
+    width: 100%;
+    background: radial-gradient(circle, rgba(27,0,75,1) 0%, rgba(76,0,125,1) 42%, rgba(127,0,178,1) 63%);
+
+    & a{
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: 600;
+    }
+
+
+}
+
+.flip {
+    height:50px;
+    overflow:hidden;
+  }
+  
+.flip > div > div {
+    color:#fff;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+.flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+.flip div div {
+    background:#42c58a;
+  }
+.flip div:first-child div {
+    background:#4ec7f3;
+  }
+.flip div:last-child div {
+    background:#DC143C;
+  }
+  
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+  
