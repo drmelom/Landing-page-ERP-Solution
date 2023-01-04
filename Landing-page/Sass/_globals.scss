@@ -1,8 +1,9 @@
 @mixin section-display {
-    width: 100%;
-    max-width: 992px;
-    margin: auto;
-    padding: 3rem;
+   width: 100%;
+    padding: 1rem 4rem;
+    margin:auto;
+    height: 600px;
+    
 }
    
 
@@ -13,7 +14,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid #bbb;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition:  1s;
+    
 
     .nav{
         display: flex;
@@ -27,6 +34,7 @@
 
 .logo a img {
     max-width: 8rem;
+    background-color: white;
 }
 
 .home-sec{
@@ -35,6 +43,62 @@
 }
 .sec-home{
     @include section-display();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    .home-img{
+        max-width: 400px;
+        img{
+            max-height: 400px;
+            max-width: 1200px;
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+            
+
+        }
+       
+        
+    }
+    
+    .home-text{
+       
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        color:#47536b;
+        span{
+            font-size: 1.5rem;
+        }
+        
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+            
+
+        }
+        
+        
+    }
+   
+}
+.sec-solutions{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sec-pos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-pos-background{
+    background-color: #47536b;
+    
    
 }
 

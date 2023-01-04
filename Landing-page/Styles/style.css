@@ -2,7 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 2px solid #bbb;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  transition: 1s;
 }
 .header-contact .nav {
   display: flex;
@@ -14,6 +19,7 @@
 
 .logo a img {
   max-width: 8rem;
+  background-color: white;
 }
 
 .home-sec {
@@ -23,9 +29,53 @@
 
 .sec-home {
   width: 100%;
-  max-width: 992px;
+  padding: 1rem 4rem;
   margin: auto;
-  padding: 3rem;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.sec-home .home-img {
+  max-width: 400px;
+}
+.sec-home .home-img img {
+  max-height: 400px;
+  max-width: 1200px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+.sec-home .home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  color: #47536b;
+}
+.sec-home .home-text span {
+  font-size: 1.5rem;
+}
+.sec-home .home-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.sec-solutions {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-pos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-pos-background {
+  background-color: #47536b;
 }
 
 .btn-star {
@@ -35,6 +85,10 @@
   background-color: #1b004b;
   padding: 0.25rem 2rem;
   font-weight: 300;
+  font-size: 1.25rem;
+  width: 17rem;
+  margin-top: 2.5rem;
+  height: 3rem;
 }
 .btn-star-s {
   border: none;
@@ -55,7 +109,7 @@
   margin-bottom: 0;
 }
 .main-menu li {
-  font-size: 0.75rem;
+  font-size: 1 rem;
   list-style: none;
   display: inline;
   margin-right: 2rem;
@@ -70,6 +124,7 @@
 }
 
 .header-banner {
+  height: 2rem;
   text-align: center;
   width: 100%;
   background: radial-gradient(circle, rgb(27, 0, 75) 0%, rgb(76, 0, 125) 42%, rgb(127, 0, 178) 63%);
@@ -77,63 +132,119 @@
 .header-banner a {
   text-decoration: none;
   color: aliceblue;
-  font-weight: 600;
+  font-weight: 100;
+  font-size: 1rem;
 }
 
-.flip {
-  height: 50px;
-  overflow: hidden;
+.box {
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.flip > div > div {
-  color: #fff;
-  padding: 4px 12px;
-  height: 45px;
-  margin-bottom: 45px;
-  display: inline-block;
+.dropping-texts {
+  display: block;
+  width: 180px;
+  text-align: left;
+  height: 36px;
+  color: rgba(128, 0, 178, 0.7176470588);
+  margin-bottom: 1.75rem;
 }
 
-.flip div:first-child {
-  animation: show 5s linear infinite;
+.dropping-texts > div {
+  font-size: 0px;
+  opacity: 0;
+  margin-left: -30px;
+  position: absolute;
+  font-weight: 500;
 }
 
-.flip div div {
-  background: #42c58a;
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
 }
 
-.flip div:first-child div {
-  background: #4ec7f3;
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
 }
 
-.flip div:last-child div {
-  background: #DC143C;
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
 }
 
-@keyframes show {
+.dropping-texts > div:nth-child(4) {
+  animation: roll 5s linear infinite 3s;
+}
+
+.dropping-texts > div:nth-child(5) {
+  animation: roll 5s linear infinite 4s;
+}
+
+@keyframes roll {
   0% {
-    margin-top: -270px;
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
   }
   5% {
-    margin-top: -180px;
-  }
-  33% {
-    margin-top: -180px;
-  }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
     margin-top: 0px;
   }
-  99.99% {
+  20% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
     margin-top: 0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-top: 100px;
   }
   100% {
-    margin-top: -270px;
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(15deg);
   }
+}
+.title {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(71, 83, 107);
+  max-width: 40rem;
+}
+.title h2 {
+  font-size: 2.25rem;
+  line-height: 4.2rem;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  letter-spacing: -0.1rem;
+}
+.title span {
+  color: rgba(128, 0, 178, 0.7176470588);
+}
+
+.solutions a:hover {
+  border-bottom: solid 2px #1b004b;
+  background: transparent;
+}
+
+.nav-img {
+  padding-top: 10rem;
+  width: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */

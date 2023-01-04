@@ -10,11 +10,16 @@ $btn-background:#1b004b;
     background-color: $btn-background;
     padding: 0.25rem 2rem;
     font-weight: 300;
+    font-size: 1.25rem;
+    width: 17rem;
+    margin-top: 2.5rem;
+    height: 3rem;
     &-s{
         @include btn();
         background-color:$btn-sm-background;
         padding: 0.25rem 1.5rem;
         font-weight: 600;
+        
         &:hover{
             background-color: #8000b2eb;
         }
@@ -28,7 +33,7 @@ $btn-background:#1b004b;
 .main-menu{
     margin-bottom: 0;
     li {
-        font-size: 0.75rem;
+        font-size: 1 rem;
         list-style: none;
         display: inline;
         margin-right: 2rem;
@@ -44,6 +49,8 @@ $btn-background:#1b004b;
     }
 }
 .header-banner{
+   
+    height:2rem ;
     text-align: center;
     width: 100%;
     background: radial-gradient(circle, rgba(27,0,75,1) 0%, rgba(76,0,125,1) 42%, rgba(127,0,178,1) 63%);
@@ -51,47 +58,131 @@ $btn-background:#1b004b;
     & a{
         text-decoration: none;
         color: aliceblue;
-        font-weight: 600;
+        font-weight: 100;
+        font-size: 1rem;
     }
 
 
 }
+.box{
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%)
 
-.flip {
-    height:50px;
-    overflow:hidden;
+}
+
+.dropping-texts {
+    display: block;
+    width: 180px;
+    text-align: left;
+    height: 36px;
+    color:$btn-sm-background;
+    margin-bottom: 1.75rem;
   }
   
-.flip > div > div {
-    color:#fff;
-    padding:4px 12px;
-    height:45px;
-    margin-bottom:45px;
-    display:inline-block;
+  .dropping-texts > div {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    position:absolute;
+    font-weight:500;   
+   
   }
   
-.flip div:first-child {
-    animation: show 5s linear infinite;
+  .dropping-texts > div:nth-child(1) {
+    animation: roll 5s linear infinite 0s;
+  }
+  .dropping-texts > div:nth-child(2) {
+    animation: roll 5s linear infinite 1s;
+  }
+  .dropping-texts > div:nth-child(3) {
+    animation: roll 5s linear infinite 2s;
+  }
+  .dropping-texts > div:nth-child(4) {
+    animation: roll 5s linear infinite 3s;
+  }
+  .dropping-texts > div:nth-child(5) {
+    animation: roll 5s linear infinite 4s;
   }
   
-.flip div div {
-    background:#42c58a;
-  }
-.flip div:first-child div {
-    background:#4ec7f3;
-  }
-.flip div:last-child div {
-    background:#DC143C;
+  
+  
+  @keyframes roll {
+    0% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(-25deg);
+    }
+    3% {
+      opacity:1;
+      transform: rotate(0deg);
+    }
+    5% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+    }
+    20% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+      transform: rotate(0deg);
+    }
+    27% {
+      font-size:0px;
+      opacity:0.5;
+      margin-left:20px;
+      margin-top:100px;
+    }
+    100% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(15deg);
+    }
   }
   
-@keyframes show {
-    0% {margin-top:-270px;}
-    5% {margin-top:-180px;}
-    33% {margin-top:-180px;}
-    38% {margin-top:-90px;}
-    66% {margin-top:-90px;}
-    71% {margin-top:0px;}
-    99.99% {margin-top:0px;}
-    100% {margin-top:-270px;}
+  
+  .title{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 700;
+    color:rgba(71,83,107,1) ;
+    max-width: 40rem;
+    h2{
+        font-size: 2.25rem;
+        line-height: 4.2rem;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        letter-spacing: -.1rem;
+
+    }
+    span{
+        color:$btn-sm-background
+    }
+    
   }
+  .solutions{
+    a{
+        &:hover{
+            border-bottom: solid 2px $btn-background;
+            background: transparent;
+           
+        }
+
+    }
+    
+  }
+  .nav-img{
+    padding-top: 10rem;
+    width: 600px;
+  }
+
+
   
