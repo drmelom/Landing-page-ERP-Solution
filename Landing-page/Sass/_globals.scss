@@ -1,5 +1,5 @@
 @mixin section-display {
-   width: 100%;
+    width: 100%;
     padding: 1rem 4rem;
     margin:auto;
     height: 600px;
@@ -84,22 +84,30 @@
    
 }
 .sec-solutions{
+    width: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     
-}
-.sec-pos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
-.sec-pos-background{
-    background-color: #47536b;
-    
-   
+  
+
+.sec-pos{
+    max-width:65rem ;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(Landing-page\assets\img\background-banner.webp);
+    background: radial-gradient(circle, rgba(153,146,166,1) 0%, rgba(238,223,241,1) 77%);
+    .text-post{
+        padding: 1.5rem;
+        color: #47536b;
+    }
 }
+
 
 
