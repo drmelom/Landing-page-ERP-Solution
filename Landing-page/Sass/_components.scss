@@ -26,11 +26,13 @@ $btn-background:#5200df;
     width: 17rem;
     margin-top: 2.5rem;
     height: 3rem;
+   
     &-s{
         @include btn();
         background-color:$btn-sm-background;
         padding: 0.25rem 1.5rem;
         font-weight: 600;
+       
         
         &:hover{
             background-color: #9c29c9;
@@ -273,3 +275,80 @@ $btn-background:#5200df;
   }
   
 }
+
+.super-form{
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .img{
+      position: absolute;
+      top: 97px;
+      left: calc(50% + 80px);
+      width: 300px;
+      height: auto;
+      & span{
+          font-size: 1.5rem;
+      }
+      & img{
+          max-width: 7rem;
+      }
+      
+      
+
+  }
+  
+}
+.google-button{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #47536b;
+  background-color:#fff;
+  border:none;
+  border: 1px solid #47536b;
+ max-width: 25rem;
+}
+
+.prom-cards{
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+  
+  .card{
+     
+      max-width: 300px;
+      border: 1px solid #47536b;
+      color: #47536b;
+      & p{
+          font-size: 1.25rem;
+          font-weight: 500;
+      }
+  }
+  .content-card{
+      padding-left: 2rem;
+  }
+  .card-pro{
+      border: 2px solid $btn-background
+  }
+  .card-pyme{
+      border-right: none;
+      & h3{
+          color: $btn-background;
+
+      }
+  }
+  .card-plus{
+      border-left: none
+  }
+  ul{
+      @include links();
+      list-style: none;
+      padding-left: 0rem;
+  }
+  
+}
+

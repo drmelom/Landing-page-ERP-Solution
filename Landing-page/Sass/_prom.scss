@@ -1,0 +1,58 @@
+@use"components";
+@use"globals";
+
+
+.sec-home-prom{
+    @include globals.section-display();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  
+       
+    .home-content-prom{
+        @extend .sec-home-prom;
+       
+        p{
+            color: #47536b;
+            font-size: 400;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+
+    .home-text-prom{
+        text-align: center;
+        color:#47536b;
+        span{
+            font-size: 1.5rem;
+        }
+        
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+            
+
+        }
+    }
+
+}
+.prom-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    .prom-sup{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    
+
+}
+

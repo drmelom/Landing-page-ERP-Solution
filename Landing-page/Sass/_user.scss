@@ -1,0 +1,44 @@
+@use "components";
+
+.staff{
+    height: 100vh;
+    width: 404px;
+    background: radial-gradient(circle, rgba(27,0,75,1) 0%, rgba(76,0,125,1) 42%, rgba(127,0,178,1) 63%);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 1;
+    overflow-y: auto;
+}
+.register{
+    display: flex;
+    
+}
+.form-user{
+    
+    width: 374px;
+    margin-left: calc(65% - 150px);
+    margin-top: 60px;
+    padding: 5px;
+    & form{
+        max-width: 20rem;
+       
+    }
+    & button{
+        margin-left: 25px;
+    }
+}
+
+.text-form{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #47536b;
+    margin-top: 250px;
+    padding-left: 460px;
+}
+
+
+    

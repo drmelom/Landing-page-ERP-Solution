@@ -153,8 +153,24 @@ footer{
 .footer-wrapper{
     margin-top: 2rem;
     border-top: 0.5px solid #47536b;
-    @include section-display()
+   width: 100%;
 }
+.copiright-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    & a{
+        display: block;
+    }
+}
+
+
+
+   
+
+
 
 
 

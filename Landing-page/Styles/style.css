@@ -120,9 +120,17 @@ footer {
   margin-top: 2rem;
   border-top: 0.5px solid #47536b;
   width: 100%;
-  padding: 1rem 4rem;
+}
+
+.copiright-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: auto;
-  height: 600px;
+}
+.copiright-container a {
+  display: block;
 }
 
 .btn-star {
@@ -360,6 +368,162 @@ footer {
 }
 .footer-col ul a:hover {
   color: #5200df;
+}
+
+.super-form {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.super-form .img {
+  position: absolute;
+  top: 97px;
+  left: calc(50% + 80px);
+  width: 300px;
+  height: auto;
+}
+.super-form .img span {
+  font-size: 1.5rem;
+}
+.super-form .img img {
+  max-width: 7rem;
+}
+
+.google-button {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #47536b;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #47536b;
+  max-width: 25rem;
+}
+
+.prom-cards {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.prom-cards .card {
+  max-width: 300px;
+  border: 1px solid #47536b;
+  color: #47536b;
+}
+.prom-cards .card p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.prom-cards .content-card {
+  padding-left: 2rem;
+}
+.prom-cards .card-pro {
+  border: 2px solid #5200df;
+}
+.prom-cards .card-pyme {
+  border-right: none;
+}
+.prom-cards .card-pyme h3 {
+  color: #5200df;
+}
+.prom-cards .card-plus {
+  border-left: none;
+}
+.prom-cards ul {
+  list-style: none;
+  padding-left: 0rem;
+}
+.prom-cards ul a {
+  color: #707070;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+.prom-cards ul a:hover {
+  color: #5200df;
+}
+
+.staff {
+  height: 100vh;
+  width: 404px;
+  background: radial-gradient(circle, rgb(27, 0, 75) 0%, rgb(76, 0, 125) 42%, rgb(127, 0, 178) 63%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.register {
+  display: flex;
+}
+
+.form-user {
+  width: 374px;
+  margin-left: calc(65% - 150px);
+  margin-top: 60px;
+  padding: 5px;
+}
+.form-user form {
+  max-width: 20rem;
+}
+.form-user button {
+  margin-left: 25px;
+}
+
+.text-form {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #47536b;
+  margin-top: 250px;
+  padding-left: 460px;
+}
+
+.sec-home-prom, .sec-home-prom .home-content-prom {
+  width: 100%;
+  padding: 1rem 4rem;
+  margin: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec-home-prom .home-content-prom p {
+  color: #47536b;
+  font-size: 400;
+}
+.sec-home-prom .home-content-prom p span {
+  font-weight: 700;
+}
+.sec-home-prom .home-text-prom {
+  text-align: center;
+  color: #47536b;
+}
+.sec-home-prom .home-text-prom span {
+  font-size: 1.5rem;
+}
+.sec-home-prom .home-text-prom h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.prom-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.prom-container .prom-sup {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
