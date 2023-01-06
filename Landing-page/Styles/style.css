@@ -18,9 +18,15 @@
   height: 4rem;
 }
 
+.logo a {
+  text-decoration: none;
+  color: #47536b;
+  font-size: 1rem;
+  font-weight: 700;
+}
 .logo a img {
-  max-width: 8rem;
-  background-color: white;
+  max-width: 4rem;
+  background: transparent;
 }
 
 .home-sec {
@@ -37,6 +43,7 @@
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  overflow: hidden;
 }
 .sec-home .home-img {
   max-width: 400px;
@@ -71,7 +78,7 @@
 }
 
 .sec-pos {
-  max-width: 65rem;
+  max-width: 75rem;
   margin: auto;
   display: flex;
   align-items: center;
@@ -82,6 +89,40 @@
 .sec-pos .text-post {
   padding: 1.5rem;
   color: #47536b;
+}
+.sec-pos .text-post h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.sec-pos .text-post p {
+  font-size: 1.25rem;
+}
+.sec-pos .text-post button {
+  height: 2.5rem;
+}
+
+.sec-test {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+.sec-test h2 {
+  color: #47536b;
+  font-weight: 700;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+.footer-wrapper {
+  margin-top: 2rem;
+  border-top: 0.5px solid #47536b;
+  width: 100%;
+  padding: 1rem 4rem;
+  margin: auto;
+  height: 600px;
 }
 
 .btn-star {
@@ -243,11 +284,6 @@
   color: rgba(128, 0, 178, 0.9019607843);
 }
 
-.solutions button:hover {
-  border-bottom: solid 2px #5200df;
-  background: transparent;
-}
-
 .cont {
   max-width: 40rem;
   display: flex;
@@ -300,6 +336,30 @@
 .nav-tabs .nav-link:focus {
   color: #5200df;
   border-bottom: 1px solid #5200df;
+}
+
+.car {
+  max-width: 100%;
+}
+.car .carousel {
+  max-width: 50rem;
+}
+.car .carousel .carousel-item img {
+  max-width: 50rem;
+  background-color: #5200df;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0rem;
+}
+.footer-col ul a {
+  color: #707070;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+.footer-col ul a:hover {
+  color: #5200df;
 }
 
 /*# sourceMappingURL=style.css.map */

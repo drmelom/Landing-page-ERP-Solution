@@ -5,6 +5,18 @@ $btn-background:#5200df;
     border-radius: 0.25rem;
     color: white;
 }
+@mixin links{
+  a {
+    color: #707070;
+    text-decoration: none;
+    transition: all .1s ease;
+
+    &:hover {
+        color: $btn-background
+    }
+
+ }
+}
 .btn-star{
     @include btn();
     background-color: $btn-background;
@@ -37,15 +49,8 @@ $btn-background:#5200df;
         list-style: none;
         display: inline;
         margin-right: 2rem;
-        a {
-            color: #707070;
-            text-decoration: none;
-            transition: all .1s ease;
-
-            &:hover {
-                color: $btn-background
-            }
-        }
+        @include links();
+        
     }
 }
 .header-banner{
@@ -169,17 +174,9 @@ $btn-background:#5200df;
     }
     
   }
-.solutions{
-    button{
-        &:hover{
-            border-bottom: solid 2px $btn-background;
-            background: transparent;
-           
-      }
 
-  }
     
-}
+
 .cont{
     max-width: 40rem;
     display: flex;
@@ -247,6 +244,32 @@ $btn-background:#5200df;
         border-bottom: 1px solid $btn-background;
         
       }
+      
+      
     }
 }
+.car{
+  max-width: 100%;
+  .carousel{
+    max-width: 50rem;
+    .carousel-item{
+      & img{
+        max-width: 50rem;
+        background-color: #5200df
+      }
 
+    }
+    
+  }
+
+}
+
+.footer-col{
+  & ul{
+    @include links();
+    list-style: none;
+    padding-left: 0rem;
+
+  }
+  
+}

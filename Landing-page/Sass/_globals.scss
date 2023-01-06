@@ -32,10 +32,24 @@
     }
 }
 
-.logo a img {
-    max-width: 8rem;
-    background-color: white;
+.logo{
+    & a{
+        text-decoration: none;
+        color: #47536b;
+        font-size: 1rem;
+        font-weight: 700;
+
+    }
+
+
+    & a img{
+        max-width:4rem;
+       background: transparent;
+       
 }
+
+    }
+    
 
 .home-sec{
     padding-top: 6rem;
@@ -47,6 +61,7 @@
     justify-content: space-between;
     align-items: center;
     flex: 1;
+    overflow: hidden;
     .home-img{
         max-width: 400px;
         img{
@@ -96,7 +111,7 @@
   
 
 .sec-pos{
-    max-width:65rem ;
+    max-width:75rem ;
     margin: auto;
     display: flex;
     align-items: center;
@@ -104,9 +119,41 @@
     background-image: url(Landing-page\assets\img\background-banner.webp);
     background: radial-gradient(circle, rgba(153,146,166,1) 0%, rgba(238,223,241,1) 77%);
     .text-post{
+        h3{
+            font-size: 2rem;
+            font-weight: 700;
+        }
         padding: 1.5rem;
         color: #47536b;
+        p{
+            font-size: 1.25rem;
+        }
+        button{
+            height: 2.5rem;
+        }
     }
+}
+.sec-test{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 4rem;
+    
+    
+    & h2{
+        color: #47536b;
+        font-weight: 700;
+    }
+    
+}
+footer{
+    padding-top: 2rem;
+}
+.footer-wrapper{
+    margin-top: 2rem;
+    border-top: 0.5px solid #47536b;
+    @include section-display()
 }
 
 
