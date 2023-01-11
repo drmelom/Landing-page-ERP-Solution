@@ -133,6 +133,16 @@ footer {
   display: block;
 }
 
+@media (max-width: 1024px) {
+  .sec-home {
+    flex-direction: column;
+    padding-top: 10rem;
+    justify-items: center;
+  }
+  .sec-home .home-img {
+    margin-top: 3rem;
+  }
+}
 .btn-star {
   border: none;
   border-radius: 0.25rem;
@@ -357,6 +367,9 @@ footer {
   background-color: #5200df;
 }
 
+.footer-col {
+  padding-top: 2rem;
+}
 .footer-col ul {
   list-style: none;
   padding-left: 0rem;
@@ -367,6 +380,9 @@ footer {
   transition: all 0.1s ease;
 }
 .footer-col ul a:hover {
+  color: #5200df;
+}
+.footer-col h3 {
   color: #5200df;
 }
 
@@ -393,12 +409,13 @@ footer {
 
 .google-button {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #47536b;
   background-color: #fff;
   border: none;
   border: 1px solid #47536b;
-  max-width: 25rem;
+  min-width: 17rem;
+  min-height: 2.5rem;
 }
 
 .prom-cards {
@@ -409,18 +426,28 @@ footer {
   margin: auto;
 }
 .prom-cards .card {
-  max-width: 300px;
-  border: 1px solid #47536b;
+  transition: all 0.5s;
+  max-width: 18rem;
+  border: 2px solid #e4e9f6;
   color: #47536b;
 }
 .prom-cards .card p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.prom-cards .card h3 {
+  font-size: 2.5rem;
   font-weight: 500;
 }
 .prom-cards .content-card {
   padding-left: 2rem;
+  padding-bottom: 2rem;
 }
-.prom-cards .card-pro {
+.prom-cards .card-pro h3 {
+  color: rgba(128, 0, 178, 0.9019607843);
+}
+.prom-cards .card-pro:hover {
+  min-height: 27rem;
   border: 2px solid #5200df;
 }
 .prom-cards .card-pyme {
@@ -429,8 +456,30 @@ footer {
 .prom-cards .card-pyme h3 {
   color: #5200df;
 }
+.prom-cards .card-pyme:hover {
+  min-height: 27rem;
+  border: 2px solid #5200df;
+}
 .prom-cards .card-plus {
   border-left: none;
+}
+.prom-cards .card-plus h3 {
+  color: #5725ac;
+}
+.prom-cards .card-plus:hover {
+  min-height: 27rem;
+  border: 2px solid #5200df;
+}
+.prom-cards .card-extra {
+  max-width: 20rem;
+}
+.prom-cards .card-extra h3 {
+  color: #47536b;
+  font-size: 2rem;
+}
+.prom-cards .card-extra:hover {
+  min-height: 25rem;
+  border: 2px solid #47536b;
 }
 .prom-cards ul {
   list-style: none;
@@ -492,6 +541,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #F0F8FF;
 }
 .sec-home-prom .home-content-prom p {
   color: #47536b;
@@ -512,6 +562,10 @@ footer {
   font-weight: 500;
 }
 
+.sec-prom-cards {
+  padding-top: 4rem;
+}
+
 .prom-container {
   display: flex;
   flex-direction: column;
@@ -521,9 +575,68 @@ footer {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+.prom-container .prom-sup .dropdown {
+  padding-bottom: 0px;
+}
+
+.d-text {
+  padding: 4rem;
+  text-align: center;
+}
+
+.custom-shape-divider-bottom-1673469950 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1673469950 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 166px;
+}
+
+.custom-shape-divider-bottom-1673469950 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.contact-container {
+  margin: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rem;
+  background-color: aliceblue;
+  max-width: 80%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.contact-container .contact-form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.contact-container .contact-test {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: flex-start;
+  min-width: 30rem;
+}
+.contact-container strong {
+  color: #5200df;
 }
 
 /*# sourceMappingURL=style.css.map */

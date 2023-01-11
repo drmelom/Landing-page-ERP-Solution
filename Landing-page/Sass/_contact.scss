@@ -1,0 +1,40 @@
+@use "components";
+.contact-container{
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+    background-color: aliceblue;
+    max-width: 80%;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
+
+    .contact-form{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow:1 ;
+       
+    }
+    
+    .contact-test{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: flex-start;
+        min-width: 30rem;
+
+        
+    }
+    strong{
+        color: components.$btn-background;
+    }
+
+   
+   
+    
+    
+}

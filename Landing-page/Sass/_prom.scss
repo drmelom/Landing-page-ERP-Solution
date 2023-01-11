@@ -8,11 +8,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #F0F8FF;
     
   
        
     .home-content-prom{
         @extend .sec-home-prom;
+       
        
         p{
             color: #47536b;
@@ -26,6 +28,8 @@
     .home-text-prom{
         text-align: center;
         color:#47536b;
+        
+       
         span{
             font-size: 1.5rem;
         }
@@ -39,6 +43,9 @@
     }
 
 }
+.sec-prom-cards{
+    padding-top: 4rem;
+}
 .prom-container{
     display: flex;
     flex-direction: column;
@@ -47,12 +54,39 @@
         max-width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding-left: 5rem;
         padding-right: 5rem;
+        .dropdown{
+            padding-bottom: 0px;
+        }
     }
     
     
 
 }
+.d-text{
+    padding: 4rem;
+    text-align: center;
+}
 
+.custom-shape-divider-bottom-1673469950 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1673469950 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 166px;
+}
+
+.custom-shape-divider-bottom-1673469950 .shape-fill {
+    fill: #FFFFFF;
+}

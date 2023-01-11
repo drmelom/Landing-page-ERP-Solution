@@ -267,11 +267,15 @@ $btn-background:#5200df;
 }
 
 .footer-col{
+  padding-top: 2rem;
   & ul{
     @include links();
     list-style: none;
     padding-left: 0rem;
 
+  }
+  & h3{
+    color: $btn-background;
   }
   
 }
@@ -302,12 +306,13 @@ $btn-background:#5200df;
 }
 .google-button{
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #47536b;
   background-color:#fff;
   border:none;
   border: 1px solid #47536b;
- max-width: 25rem;
+  min-width:17rem;
+  min-height: 2.5rem;
 }
 
 .prom-cards{
@@ -319,20 +324,42 @@ $btn-background:#5200df;
   
   
   .card{
+    transition: all 0.5s;
      
-      max-width: 300px;
-      border: 1px solid #47536b;
+      max-width: 18rem;
+      border: 2px solid #e4e9f6;
+
       color: #47536b;
       & p{
-          font-size: 1.25rem;
+          font-size: 1.5rem;
           font-weight: 500;
+      }
+      & h3{
+        font-size: 2.5rem;
+        font-weight: 500;
       }
   }
   .content-card{
       padding-left: 2rem;
+      padding-bottom: 2rem;
   }
   .card-pro{
-      border: 2px solid $btn-background
+   
+    
+      
+      
+      & h3{
+        color: $btn-sm-background;
+
+      }
+      &:hover{
+        
+        min-height: 27rem;
+        border: 2px solid $btn-background;
+        
+      }
+
+      
   }
   .card-pyme{
       border-right: none;
@@ -340,9 +367,37 @@ $btn-background:#5200df;
           color: $btn-background;
 
       }
+      &:hover{
+        min-height: 27rem;
+        border: 2px solid $btn-background;
+      }
+
   }
   .card-plus{
-      border-left: none
+      border-left: none;
+      & h3{
+        color:#5725ac
+
+      }
+      &:hover{
+        min-height: 27rem;
+        border: 2px solid $btn-background;
+      }
+
+  }
+  .card-extra{
+    max-width: 20rem;
+    & h3{
+      color:#47536b;
+      font-size: 2rem;
+      
+
+    }
+    &:hover{
+      min-height: 25rem;
+      border: 2px solid #47536b;
+    }
+
   }
   ul{
       @include links();

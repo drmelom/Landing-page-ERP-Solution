@@ -52,6 +52,7 @@
     
 
 .home-sec{
+    
     padding-top: 6rem;
     padding-left: 2rem; 
 }
@@ -63,6 +64,7 @@
     flex: 1;
     overflow: hidden;
     .home-img{
+        
         max-width: 400px;
         img{
             max-height: 400px;
@@ -165,7 +167,23 @@ footer{
         display: block;
     }
 }
+@media (max-width: 1024px){
+    .sec-home{
+        
+       
+        flex-direction: column;
+        padding-top: 10rem;
+        justify-items: center;
+       .home-img{
+        margin-top: 3rem;
 
+       }
+        
+    
+
+    }
+
+}
 
 
    
