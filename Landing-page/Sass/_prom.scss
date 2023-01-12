@@ -90,3 +90,16 @@
 .custom-shape-divider-bottom-1673469950 .shape-fill {
     fill: #FFFFFF;
 }
+
+@media (max-width: 768px){
+    .prom-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card{
+            border: 2px solid #e4e9f6;
+            min-width: 30rem;
+        }
+    }
+
+}

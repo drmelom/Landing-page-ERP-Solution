@@ -7,7 +7,7 @@
     justify-content: center;
     margin-top: 20rem;
     background-color: aliceblue;
-    max-width: 80%;
+    width: 50rem;
     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
 
     .contact-form{
@@ -37,4 +37,11 @@
    
     
     
+}
+@media(max-width:768px){
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
