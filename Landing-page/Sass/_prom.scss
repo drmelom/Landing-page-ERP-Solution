@@ -8,12 +8,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F0F8FF;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(152,70,252,1) 100%);
+    position: relative;
+    
+    
     
   
        
     .home-content-prom{
         @extend .sec-home-prom;
+        width: 100%;
+        
+       
        
        
         p{
@@ -28,6 +34,7 @@
     .home-text-prom{
         text-align: center;
         color:#47536b;
+        
         
        
         span{
@@ -47,6 +54,7 @@
     padding-top: 4rem;
 }
 .prom-container{
+   
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -70,24 +78,26 @@
     text-align: center;
 }
 
-.custom-shape-divider-bottom-1673469950 {
+.custom-shape-divider-bottom-1673555373 {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    top: 7rem;
+    bottom: -1.25rem;
+    left: -4rem;
+    width: 100vw;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+   
 }
 
-.custom-shape-divider-bottom-1673469950 svg {
+.custom-shape-divider-bottom-1673555373 svg {
     position: relative;
     display: block;
-    width: calc(119% + 1.3px);
-    height: 166px;
+    width: calc(100% + 20px);
+    height: 120px;
 }
 
-.custom-shape-divider-bottom-1673469950 .shape-fill {
+.custom-shape-divider-bottom-1673555373 .shape-fill {
     fill: #FFFFFF;
 }
 

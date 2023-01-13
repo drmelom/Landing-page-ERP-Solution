@@ -4,9 +4,6 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   z-index: 100;
   transition: 1s;
 }
@@ -14,9 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
-  height: 4rem;
-  flex-wrap: nowrap;
+  width: 100vw;
+  height: 3.5rem;
 }
 
 .logo a {
@@ -31,6 +27,7 @@
 }
 
 .home-sec {
+  width: 100vw;
   padding-top: 6rem;
   padding-left: 2rem;
 }
@@ -529,6 +526,45 @@ footer {
   color: #5200df;
 }
 
+.btn-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #5200df;
+  display: none;
+}
+
+ul.show {
+  top: 5.25rem;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 858px) {
+  .btn-menu {
+    display: inline-flex;
+  }
+  .main-menu {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 3.25rem);
+    background: #e4e9f6;
+    top: -100vh;
+    right: 0%;
+    text-align: center;
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-menu li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .main-menu li:hover {
+    background: none;
+  }
+}
 .staff {
   height: 100vh;
   width: 404px;
@@ -602,7 +638,11 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #F0F8FF;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(152, 70, 252) 100%);
+  position: relative;
+}
+.sec-home-prom .home-content-prom {
+  width: 100%;
 }
 .sec-home-prom .home-content-prom p {
   color: #47536b;
@@ -649,24 +689,25 @@ footer {
   text-align: center;
 }
 
-.custom-shape-divider-bottom-1673469950 {
+.custom-shape-divider-bottom-1673555373 {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  top: 7rem;
+  bottom: -1.25rem;
+  left: -4rem;
+  width: 100vw;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1673469950 svg {
+.custom-shape-divider-bottom-1673555373 svg {
   position: relative;
   display: block;
-  width: calc(119% + 1.3px);
-  height: 166px;
+  width: calc(100% + 20px);
+  height: 120px;
 }
 
-.custom-shape-divider-bottom-1673469950 .shape-fill {
+.custom-shape-divider-bottom-1673555373 .shape-fill {
   fill: #FFFFFF;
 }
 
@@ -681,15 +722,44 @@ footer {
     min-width: 30rem;
   }
 }
+.sec-contact {
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+}
+
+.sec-title-contact #gradient-canvas {
+  width: 100%;
+  height: 65rem;
+  --gradient-color-1: #a960ee;
+  --gradient-color-2: #ff333d;
+  --gradient-color-3: #90e0ff;
+  --gradient-color-4: #ffcb57;
+  z-index: 0;
+}
+.sec-title-contact .contact-container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 1.25rem;
+  padding: 2rem;
+  line-height: 1.4;
+}
+
 .contact-container {
   margin: auto;
   display: flex;
-  align-content: center;
   align-items: center;
   justify-content: center;
-  margin-top: 20rem;
-  background-color: aliceblue;
-  width: 50rem;
+  margin-top: 2rem;
+  width: 80%;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .contact-container .contact-form {
@@ -697,15 +767,13 @@ footer {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  max-width: 50rem;
 }
-.contact-container .contact-test {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-items: flex-start;
-  min-width: 30rem;
+.contact-container .contact-form .contact-text {
+  text-align: center;
+}
+.contact-container .contact-form .form-check-label {
+  font-size: 1rem;
 }
 .contact-container strong {
   color: #5200df;
@@ -715,6 +783,17 @@ footer {
   .contact-container {
     display: flex;
     flex-direction: column;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

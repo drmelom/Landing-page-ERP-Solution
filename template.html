@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Landing-page/Styles/style.css">
+    <link rel="stylesheet" href="Landing-page/Styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <title>ERP Solution</title>
 </head>
 <body>
@@ -18,38 +19,28 @@
         <nav class="nav">
             <div class="logo">
                 <a href="template.html">
-                  <img src="/Landing-page/assets/img/Mi proyecto.png" alt="logo" /> ERP Solution
+                  <img src="Landing-page/assets/img/Mi proyecto.png" alt="logo" /> ERP Solution
                   
                 </a>
             </div>
 
             <div class="menu">
                 <ul class="main-menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Soluciones</a>
-                        <ul class="dropdown-menu" >
-                          <li><a class="dropdown-item" href="#">Facturaciones</a></li>
-                          <li><a class="dropdown-item" href="#">Contabilidad</a></li>
-                          <li><a class="dropdown-item" href="#">POS</a></li>
-                          <li><a class="dropdown-item" href="#">Tienda</a></li>
-                          <li><a class="dropdown-item" href="#">Nomina</a></li>
-                          
-                        </ul>
-                    </li>
-
-                    <li><a href="prom.html">Planes</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#solutions">Soluciones</a></li>
+                    <li><a href="#planes">Planes</a></li>
                     <li><a href="contact.html">Contacto</a></li>
                 
                 </ul>
             </div>   
            <div class="get-started">
             <a href="user\register.html"target=_blank><button class="btn-star-s" >INGRESAR</button></a>
-           </div>    
+           </div> 
+           <span class="btn-menu"><i class="bi bi-list"></i></span>   
         </nav> 
     </header>
     <main>
-        <section class="sec-home">
+        <section class="sec-home" id="home">
             <div class="home-content">
                 <div class="home-text">
                     <h1 class="content">Sistema de
@@ -74,7 +65,7 @@
     
             </div>
         </section>
-        <section class="sec-solutions">
+        <section class="sec-solutions" id="solutions">
             <div class="title">
                 <h2>Descubre todas las <span>soluciones</span> diseñadas <span>para hacer crecer tu negocio</span></h2>
             </div>
@@ -284,22 +275,187 @@
             </nav>
             
         </section>
-        <section class="sec-pos rounded-5">
+        <section class="sec-home-prom" id="planes">
             
-            <div class="text-post">
-                    <h3>¿Tienes ventas por más de $212.000?</h3>
-                    <br>
-                    <p>Desde 2023, deberás convertir tu documento POS a una factura electrónica.</p>
-                    <button class="btn-star-s">Hacerlo con ERP Solution</button>
-
+            <div class="home-content-prom">
+                <div class="custom-shape-divider-bottom-1673555373">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="home-text-prom">
+                    <h1 class="content">El Sistema de las Pymes Colombianas
+                    </h1>
+                    <span>Comienza con el plan que mas se ajusta a tu negocio</span>
+                </div>
+                <a href="user\register.html"><button class="btn-star">EMPEZAR</button></a>
+                <br>
+                <p>Muchas <span>empresas </span>en colombia ya <span>atuomatizaron su contabilidad</span> con ERP Solution</p>
             </div>
-            <div class="img-post">
-                    <img src="Landing-page\assets\img\alegra-side-image-POS-banner-with-background.webp" alt="">
 
-            </div>
             
+        </section >
+        <section class="sec-prom-cards">
+            <div class="prom-container">
+                <div class="prom-sup">
+                    <div class="options">
+                       
+                        <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#mensual-tab-pane" type="button" role="tab" aria-controls="mensual-tab-pane" aria-selected="true">Mensual</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#anual-tab-pane" type="button" role="tab" aria-controls="mensual-tab-pane" aria-selected="false">Anual</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="mensual-tab-pane" role="tabpanel" aria-labelledby="mensual-tab" tabindex="0">
+                                <div class="prom-cards">
+                                    <div class="card card-pyme">
+                                        <div class="content-card">
+                                            <h3>Pyme</h3>
+                                            <span>Para tu rendiemiento</span>
+                                         <h3>$74.900</h3>
+                                            <span>COP / MENSUAL</span>
+                                            <ul>
+                                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                                <li><i class="bi bi-check-lg"></i>Hasta <span>$39.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                                <li><i class="bi bi-check-lg"></i><span>2 Usuarios con acceso</span></li>
+                                            </ul>
+                                            <button class="btn-star-s">ELEGIR PLAN</button>
+                
+                                        </div>
+                                    </div>
+                                    <div class="card card-pro">
+                                        <div class="content-card">
+                                            <h3>Pro</h3>
+                                            <span>Para tu rendiemiento</span>
+                                         <h3>$149.900</h3>
+                                            <span>COP / MENSUAL</span>
+                                            <ul>
+                                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                                <li><i class="bi bi-check-lg"></i>Hasta<span>$170.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                                <li><i class="bi bi-check-lg"></i><span>3 Usuarios con acceso</span></li>
+                                            </ul>
+                                            <button class="btn-star-s">ELEGIR PLAN</button>
+                
+                                        </div>
+                                    </div>
+                                    <div class="card card-plus">
+                                        <div class="content-card">
+                                            <h3>Plus</h3>
+                                            <span>Para tu rendiemiento</span>
+                                         <h3>$229.900</h3>
+                                            <span>COP / MENSUAL</span>
+                                            <ul>
+                                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                                <li><i class="bi bi-check-lg"></i>Hasta <span>$450.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                                <li><i class="bi bi-check-lg"></i><span>8 Usuarios con acceso</span></li>
+                                            </ul>
+                                            <button class="btn-star-s">ELEGIR PLAN</button>
+                
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="anual-tab-pane" role="tabpanel" aria-labelledby="anual-tab" tabindex="0">
+                                <div class="prom-cards">
+                                    <div class="card card-pyme">
+                                        <div class="content-card">
+                                            <h3>Pyme</h3>
+                                            <span>Para tu rendiemiento</span>
+                                         <h3>$67.500 / MES</h3>
+                                            <span>Ahorras $88.800 al año</span>
+                                            <ul>
+                                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                                <li><i class="bi bi-check-lg"></i>Hasta <span>$39.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                                <li><i class="bi bi-check-lg"></i><span>2 Usuarios con acceso</span></li>
+                                            </ul>
+                                            <button class="btn-star-s">ELEGIR PLAN</button>
+                
+                                        </div>
+                                    </div>
+                                    <div class="card card-pro">
+                                        <div class="content-card">
+                                            <h3>Pro</h3>
+                                            <span>Para tu rendiemiento</span>
+                                         <h3>$135.000 / MES</h3>
+                                            <span>Ahorras 179.880 al mes</span>
+                                            <ul>
+                                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                                <li><i class="bi bi-check-lg"></i>Hasta <span>$39.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                                <li><i class="bi bi-check-lg"></i><span>2 Usuarios con acceso</span></li>
+                                            </ul>
+                                            <button class="btn-star-s">ELEGIR PLAN</button>
+                
+                                        </div>
+                                    </div>
+                                    <div class="card card-plus">
+                                        <div class="content-card">
+                                            <h3>Plus</h3>
+                                            <span>Para tu rendiemiento</span>
+                                         <h3>$207.000 / MES</h3>
+                                            <span>Ahorras 274.800 al año</span>
+                                            <ul>
+                                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                                <li><i class="bi bi-check-lg"></i>Hasta <span>$39.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                                <li><i class="bi bi-check-lg"></i><span>2 Usuarios con acceso</span></li>
+                                            </ul>
+                                            <button class="btn-star-s">ELEGIR PLAN</button>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                <h3 class="d-text">¿Aun buscas tu plan ideal?</h3>
+
+                <div class="prom-cards">
+                    <div class="card card-extra">
+                        <div class="content-card">
+                            <h3>Emprendedor</h3>
+                            <span>Para empezar a crecer</span>
+                         <h3>$20.700 / MES</h3>
+                            <span>COP / MENSUAL</span>
+                            <ul>
+                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                <li><i class="bi bi-check-lg"></i>Hasta <span>$9.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                <li><span><i class="bi bi-check-lg"></i>1 Usuarios con acceso</span></li>
+                            </ul>
+                            <button class="btn-star-s">ELEGIR PLAN</button>
+
+                        </div>
+                    </div>
+                    <div class="card card-extra">
+                        <div class="content-card">
+                            <h3>Enterprice</h3>
+                            <span>Para tu gran empresa</span>
+                            <br>
+                            
+                        
+                            <span>¿Necesitas <strong>una solucion sin limnites?</strong> Este plan es para ti
+                            </span>
+                            <br>
+                            <br>
+                            <ul>
+                                <li><i class="bi bi-check-lg"></i>Compras y ventas <span>ilimitadas</span><span>Inclute facturacion electronica</span></li>
+                                <li><i class="bi bi-check-lg"></i>Hasta <span>$39.000.000 COP </span><span>de ingresos mensuales</span></li>
+                                <li><i class="bi bi-check-lg"></i><span>2 Usuarios con acceso</span></li>
+                            </ul>
+                            <button class="btn-star-s">ELEGIR PLAN</button>
+
+                        </div>
+                    </div>
+                   
+
+                </div>
+                
+            </div>
         </section>
-        <section class="sec-prom"></section>
         <section class="sec-test">
             <h2>Testimonios que nos llenan de orgullo</h2>
             
@@ -332,6 +488,7 @@
                   </div>
             </div>
         </section>
+       
 
     </main>
     <footer>
