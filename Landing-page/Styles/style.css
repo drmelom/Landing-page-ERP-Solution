@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
 .header-contact {
   display: flex;
   flex-direction: column;
@@ -13,6 +17,7 @@
   justify-content: space-around;
   width: 100vw;
   height: 3.5rem;
+  background-color: white;
 }
 
 .logo a {
@@ -48,9 +53,10 @@
 }
 .sec-home .home-img img {
   max-height: 400px;
-  max-width: 1200px;
+  max-width: 1000px;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
+  overflow: hidden;
 }
 .sec-home .home-text {
   display: flex;
@@ -548,7 +554,7 @@ ul.show {
     width: 100%;
     height: calc(100% - 3.25rem);
     background: #e4e9f6;
-    top: -100vh;
+    top: -200vh;
     right: 0%;
     text-align: center;
     transition: all 0.4s;
@@ -638,14 +644,14 @@ ul.show {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(152, 70, 252) 100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(220, 204, 249) 14%, rgb(27, 0, 75) 100%);
   position: relative;
 }
 .sec-home-prom .home-content-prom {
   width: 100%;
 }
 .sec-home-prom .home-content-prom p {
-  color: #47536b;
+  color: #131519;
   font-size: 400;
 }
 .sec-home-prom .home-content-prom p span {
@@ -731,10 +737,10 @@ ul.show {
 .sec-title-contact #gradient-canvas {
   width: 100%;
   height: 65rem;
-  --gradient-color-1: #a960ee;
-  --gradient-color-2: #ff333d;
-  --gradient-color-3: #90e0ff;
-  --gradient-color-4: #ffcb57;
+  --gradient-color-1: #3F0C5C;
+  --gradient-color-2: #A43BE1;
+  --gradient-color-3: #951DDB;
+  --gradient-color-4: #7315A8;
   z-index: 0;
 }
 .sec-title-contact .contact-container {
